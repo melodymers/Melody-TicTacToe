@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicTacToe));
-            this.title = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.titleHeader = new System.Windows.Forms.PictureBox();
+            this.background = new System.Windows.Forms.PictureBox();
             this.btnA1 = new System.Windows.Forms.Button();
             this.btnA2 = new System.Windows.Forms.Button();
             this.btnA3 = new System.Windows.Forms.Button();
@@ -40,43 +40,52 @@
             this.btnC1 = new System.Windows.Forms.Button();
             this.btnC2 = new System.Windows.Forms.Button();
             this.btnC3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.title)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.playerButtons = new System.Windows.Forms.PictureBox();
+            this.newGameBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
+            this.helpBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.titleHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerButtons)).BeginInit();
             this.SuspendLayout();
             // 
-            // title
+            // titleHeader
             // 
-            this.title.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.title, "title");
-            this.title.Image = global::TicTacToe_Melody.Properties.Resources.title1;
-            this.title.Name = "title";
-            this.title.TabStop = false;
+            this.titleHeader.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.titleHeader, "titleHeader");
+            this.titleHeader.Image = global::TicTacToe_Melody.Properties.Resources.ff;
+            this.titleHeader.Name = "titleHeader";
+            this.titleHeader.TabStop = false;
+            this.titleHeader.Click += new System.EventHandler(this.title_Click);
             // 
-            // pictureBox1
+            // background
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::TicTacToe_Melody.Properties.Resources.bg;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.background.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.background, "background");
+            this.background.Image = global::TicTacToe_Melody.Properties.Resources.bg;
+            this.background.Name = "background";
+            this.background.TabStop = false;
             // 
             // btnA1
             // 
             resources.ApplyResources(this.btnA1, "btnA1");
             this.btnA1.Name = "btnA1";
             this.btnA1.UseVisualStyleBackColor = true;
+            this.btnA1.Click += new System.EventHandler(this.btnA1_Click);
             // 
             // btnA2
             // 
             resources.ApplyResources(this.btnA2, "btnA2");
             this.btnA2.Name = "btnA2";
             this.btnA2.UseVisualStyleBackColor = true;
+            this.btnA2.Click += new System.EventHandler(this.btnA2_Click);
             // 
             // btnA3
             // 
             resources.ApplyResources(this.btnA3, "btnA3");
             this.btnA3.Name = "btnA3";
             this.btnA3.UseVisualStyleBackColor = true;
+            this.btnA3.Click += new System.EventHandler(this.btnA3_Click);
             // 
             // btnB1
             // 
@@ -96,6 +105,7 @@
             resources.ApplyResources(this.btnB3, "btnB3");
             this.btnB3.Name = "btnB3";
             this.btnB3.UseVisualStyleBackColor = true;
+            this.btnB3.Click += new System.EventHandler(this.btnB3_Click);
             // 
             // btnC1
             // 
@@ -116,6 +126,42 @@
             this.btnC3.Name = "btnC3";
             this.btnC3.UseVisualStyleBackColor = true;
             // 
+            // playerButtons
+            // 
+            this.playerButtons.BackColor = System.Drawing.Color.Transparent;
+            this.playerButtons.Image = global::TicTacToe_Melody.Properties.Resources.BTSN;
+            this.playerButtons.InitialImage = global::TicTacToe_Melody.Properties.Resources.BTSN1;
+            resources.ApplyResources(this.playerButtons, "playerButtons");
+            this.playerButtons.Name = "playerButtons";
+            this.playerButtons.TabStop = false;
+            // 
+            // newGameBtn
+            // 
+            this.newGameBtn.BackColor = System.Drawing.Color.Transparent;
+            this.newGameBtn.ForeColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.newGameBtn, "newGameBtn");
+            this.newGameBtn.Name = "newGameBtn";
+            this.newGameBtn.UseVisualStyleBackColor = false;
+            this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click);
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.exitBtn, "exitBtn");
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // helpBtn
+            // 
+            this.helpBtn.BackColor = System.Drawing.Color.Transparent;
+            this.helpBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.helpBtn, "helpBtn");
+            this.helpBtn.Name = "helpBtn";
+            this.helpBtn.UseVisualStyleBackColor = false;
+            this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click);
+            // 
             // TicTacToe
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -123,6 +169,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::TicTacToe_Melody.Properties.Resources.bgg;
+            this.Controls.Add(this.helpBtn);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.newGameBtn);
+            this.Controls.Add(this.playerButtons);
+            this.Controls.Add(this.titleHeader);
             this.Controls.Add(this.btnC1);
             this.Controls.Add(this.btnC2);
             this.Controls.Add(this.btnC3);
@@ -132,24 +183,24 @@
             this.Controls.Add(this.btnA3);
             this.Controls.Add(this.btnA2);
             this.Controls.Add(this.btnA1);
-            this.Controls.Add(this.title);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.background);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TicTacToe";
             this.ShowIcon = false;
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Load += new System.EventHandler(this.TicTacToe_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.title)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.titleHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerButtons)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox title;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox titleHeader;
+        private System.Windows.Forms.PictureBox background;
         private System.Windows.Forms.Button btnA1;
         private System.Windows.Forms.Button btnA2;
         private System.Windows.Forms.Button btnA3;
@@ -159,6 +210,10 @@
         private System.Windows.Forms.Button btnC1;
         private System.Windows.Forms.Button btnC2;
         private System.Windows.Forms.Button btnC3;
+        private System.Windows.Forms.PictureBox playerButtons;
+        private System.Windows.Forms.Button newGameBtn;
+        private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.Button helpBtn;
     }
 }
 

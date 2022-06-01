@@ -83,9 +83,49 @@ namespace TicTacToe_Melody.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BTNS {
+            get {
+                object obj = ResourceManager.GetObject("BTNS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BTSN {
+            get {
+                object obj = ResourceManager.GetObject("BTSN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BTSN1 {
+            get {
+                object obj = ResourceManager.GetObject("BTSN1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e4fc4748533b437efbf1eeb5dc34fd36 {
             get {
                 object obj = ResourceManager.GetObject("e4fc4748533b437efbf1eeb5dc34fd36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ff {
+            get {
+                object obj = ResourceManager.GetObject("ff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
