@@ -29,20 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicTacToe));
+            this.title = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.title)).BeginInit();
             this.SuspendLayout();
+            // 
+            // title
+            // 
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.title, "title");
+            this.title.Image = global::TicTacToe_Melody.Properties.Resources.title1;
+            this.title.Name = "title";
+            this.title.TabStop = false;
             // 
             // TicTacToe
             // 
-            resources.ApplyResources(this, "$this");
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackgroundImage = global::TicTacToe_Melody.Properties.Resources.e4fc4748533b437efbf1eeb5dc34fd36;
+            this.Controls.Add(this.title);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TicTacToe";
+            this.ShowIcon = false;
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Load += new System.EventHandler(this.TicTacToe_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.title)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox title;
     }
 }
 
