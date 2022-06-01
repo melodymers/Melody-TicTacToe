@@ -23,7 +23,6 @@ namespace TicTacToe_Melody
         {
 
         }
-
         private void btnB1_Click(object sender, EventArgs e)
         {
             Button btnB1 = (Button)sender;
@@ -36,12 +35,7 @@ namespace TicTacToe_Melody
             turn = !turn;
             btnB1.Enabled = false;
             turn_count++;
-
-  
-
-
         }
-
         private void btnC2_Click(object sender, EventArgs e)
         {
             Button btnC2 = (Button)sender;
@@ -55,22 +49,6 @@ namespace TicTacToe_Melody
             btnC2.Enabled = false;
             turn_count++;
         }
-
-        private void title_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnA1_Click(object sender, EventArgs e)
         {
             Button btnA1 = (Button)sender;
@@ -85,7 +63,6 @@ namespace TicTacToe_Melody
             turn_count++;
 
         }
-
         private void btnA2_Click(object sender, EventArgs e)
         {
             Button btnA2 = (Button)sender;
@@ -99,7 +76,19 @@ namespace TicTacToe_Melody
             btnA2.Enabled = false;
             turn_count++;
         }
+        private void btnB3_Click(object sender, EventArgs e)
+        {
+            Button btnB3 = (Button)sender;
 
+            if (turn)
+                btnB3.Text = "X";
+            else
+                btnB3.Text = "O";
+
+            turn = !turn;
+            btnB3.Enabled = false;
+            turn_count++;
+        }
         private void btnA3_Click(object sender, EventArgs e)
         {
             Button btnA3 = (Button)sender;
@@ -113,12 +102,54 @@ namespace TicTacToe_Melody
             btnA3.Enabled = false;
             turn_count++;
         }
+        private void btnB2_Click(object sender, EventArgs e)
+        {
+            Button btnB2 = (Button)sender;
 
-        private void button2_Click(object sender, EventArgs e)
+            if (turn)
+                btnB2.Text = "X";
+            else
+                btnB2.Text = "O";
+
+            turn = !turn;
+            btnB2.Enabled = false;
+            turn_count++;
+        }
+        private void btnC1_Click(object sender, EventArgs e)
+        {
+            Button btnC1 = (Button)sender;
+
+            if (turn)
+                btnC1.Text = "X";
+            else
+                btnC1.Text = "O";
+
+            turn = !turn;
+            btnC1.Enabled = false;
+            turn_count++;
+        }
+        private void btnC3_Click(object sender, EventArgs e)
+        {
+            Button btnB2 = (Button)sender;
+
+            if (turn)
+                btnC3.Text = "X";
+            else
+                btnC3.Text = "O";
+
+            turn = !turn;
+            btnC3.Enabled = false;
+            turn_count++;
+        }
+        private void title_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
         private void newGameBtn_Click(object sender, EventArgs e)
         {
 
@@ -129,18 +160,9 @@ namespace TicTacToe_Melody
 
         }
 
-        private void btnB3_Click(object sender, EventArgs e)
+        private void ExitBtn_Click(object sender, EventArgs e)
         {
-            Button btnB3 = (Button)sender;
 
-            if (turn)
-                btnB3.Text = "X";
-            else
-                btnB3.Text = "O";
-
-            turn = !turn;
-            btnB3.Enabled = false;
-            turn_count++;
         }
     }
 }

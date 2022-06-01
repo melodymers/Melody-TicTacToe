@@ -42,8 +42,8 @@
             this.btnC3 = new System.Windows.Forms.Button();
             this.playerButtons = new System.Windows.Forms.PictureBox();
             this.newGameBtn = new System.Windows.Forms.Button();
-            this.exitBtn = new System.Windows.Forms.Button();
             this.helpBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.titleHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerButtons)).BeginInit();
@@ -99,6 +99,7 @@
             resources.ApplyResources(this.btnB2, "btnB2");
             this.btnB2.Name = "btnB2";
             this.btnB2.UseVisualStyleBackColor = true;
+            this.btnB2.Click += new System.EventHandler(this.btnB2_Click);
             // 
             // btnB3
             // 
@@ -112,6 +113,7 @@
             resources.ApplyResources(this.btnC1, "btnC1");
             this.btnC1.Name = "btnC1";
             this.btnC1.UseVisualStyleBackColor = true;
+            this.btnC1.Click += new System.EventHandler(this.btnC1_Click);
             // 
             // btnC2
             // 
@@ -125,6 +127,7 @@
             resources.ApplyResources(this.btnC3, "btnC3");
             this.btnC3.Name = "btnC3";
             this.btnC3.UseVisualStyleBackColor = true;
+            this.btnC3.Click += new System.EventHandler(this.btnC3_Click);
             // 
             // playerButtons
             // 
@@ -144,15 +147,6 @@
             this.newGameBtn.UseVisualStyleBackColor = false;
             this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click);
             // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.exitBtn, "exitBtn");
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
             // helpBtn
             // 
             this.helpBtn.BackColor = System.Drawing.Color.Transparent;
@@ -162,6 +156,15 @@
             this.helpBtn.UseVisualStyleBackColor = false;
             this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click);
             // 
+            // ExitBtn
+            // 
+            this.ExitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ExitBtn.ForeColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ExitBtn, "ExitBtn");
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
             // TicTacToe
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -169,8 +172,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::TicTacToe_Melody.Properties.Resources.bgg;
+            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.helpBtn);
-            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.newGameBtn);
             this.Controls.Add(this.playerButtons);
             this.Controls.Add(this.titleHeader);
@@ -212,8 +215,8 @@
         private System.Windows.Forms.Button btnC3;
         private System.Windows.Forms.PictureBox playerButtons;
         private System.Windows.Forms.Button newGameBtn;
-        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Button helpBtn;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }
 
