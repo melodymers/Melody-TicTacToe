@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 45</value>
+    <value>100, 23</value>
   </data>
   <data name="title.Size" type="System.Drawing.Size, System.Drawing">
     <value>506, 112</value>
@@ -145,7 +145,244 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;title.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 56</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 668</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnA1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 199</value>
+  </data>
+  <data name="btnA1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnA1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnA1.Name" xml:space="preserve">
+    <value>btnA1</value>
+  </data>
+  <data name="&gt;&gt;btnA1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnA1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnA1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnA2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnA2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 199</value>
+  </data>
+  <data name="btnA2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnA2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnA2.Name" xml:space="preserve">
+    <value>btnA2</value>
+  </data>
+  <data name="&gt;&gt;btnA2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnA2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnA2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnA3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnA3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 199</value>
+  </data>
+  <data name="btnA3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnA3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnA3.Name" xml:space="preserve">
+    <value>btnA3</value>
+  </data>
+  <data name="&gt;&gt;btnA3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnA3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnA3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnB1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnB1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 338</value>
+  </data>
+  <data name="btnB1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnB1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnB1.Name" xml:space="preserve">
+    <value>btnB1</value>
+  </data>
+  <data name="&gt;&gt;btnB1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnB1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnB1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnB2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnB2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 338</value>
+  </data>
+  <data name="btnB2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnB2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnB2.Name" xml:space="preserve">
+    <value>btnB2</value>
+  </data>
+  <data name="&gt;&gt;btnB2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnB2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnB2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnB3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnB3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 338</value>
+  </data>
+  <data name="btnB3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnB3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnB3.Name" xml:space="preserve">
+    <value>btnB3</value>
+  </data>
+  <data name="&gt;&gt;btnB3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnB3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnB3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnC1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnC1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 476</value>
+  </data>
+  <data name="btnC1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnC1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btnC1.Name" xml:space="preserve">
+    <value>btnC1</value>
+  </data>
+  <data name="&gt;&gt;btnC1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnC1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnC1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnC2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnC2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 476</value>
+  </data>
+  <data name="btnC2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnC2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnC2.Name" xml:space="preserve">
+    <value>btnC2</value>
+  </data>
+  <data name="&gt;&gt;btnC2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnC2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnC2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnC3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnC3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 476</value>
+  </data>
+  <data name="btnC3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 103</value>
+  </data>
+  <data name="btnC3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnC3.Name" xml:space="preserve">
+    <value>btnC3</value>
+  </data>
+  <data name="&gt;&gt;btnC3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnC3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnC3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -157,7 +394,7 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>776, 663</value>
+    <value>702, 645</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>TicTacToe</value>

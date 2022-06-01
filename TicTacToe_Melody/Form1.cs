@@ -26,5 +26,20 @@ namespace TicTacToe_Melody
         {
 
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnB1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnC2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
