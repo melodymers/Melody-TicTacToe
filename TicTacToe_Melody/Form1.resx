@@ -177,6 +177,9 @@
   <data name="&gt;&gt;background.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="btnA1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
   <data name="btnA1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -200,6 +203,9 @@
   </data>
   <data name="&gt;&gt;btnA1.ZOrder" xml:space="preserve">
     <value>13</value>
+  </data>
+  <data name="btnA2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="btnA2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -225,6 +231,9 @@
   <data name="&gt;&gt;btnA2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="btnA3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
   <data name="btnA3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -248,6 +257,9 @@
   </data>
   <data name="&gt;&gt;btnA3.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="btnB1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="btnB1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -273,6 +285,9 @@
   <data name="&gt;&gt;btnB1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="btnB2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
   <data name="btnB2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -296,6 +311,9 @@
   </data>
   <data name="&gt;&gt;btnB2.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="btnB3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="btnB3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -321,6 +339,9 @@
   <data name="&gt;&gt;btnB3.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="btnC1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
   <data name="btnC1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -345,6 +366,9 @@
   <data name="&gt;&gt;btnC1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btnC2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
   <data name="btnC2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -368,6 +392,9 @@
   </data>
   <data name="&gt;&gt;btnC2.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="btnC3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="btnC3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

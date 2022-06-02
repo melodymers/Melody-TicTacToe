@@ -1,7 +1,11 @@
-﻿namespace TicTacToe_Melody
+﻿using System;
+
+namespace TicTacToe_Melody
 {
     partial class TicTacToe
     {
+        private const bool V = false;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -91,24 +95,28 @@
             resources.ApplyResources(this.btnB1, "btnB1");
             this.btnB1.Name = "btnB1";
             this.btnB1.UseVisualStyleBackColor = true;
+            this.btnB1.Click += new System.EventHandler(this.btnB1_Click_1);
             // 
             // btnB2
             // 
             resources.ApplyResources(this.btnB2, "btnB2");
             this.btnB2.Name = "btnB2";
             this.btnB2.UseVisualStyleBackColor = true;
+            this.btnB2.Click += new System.EventHandler(this.btnB2_Click);
             // 
             // btnB3
             // 
             resources.ApplyResources(this.btnB3, "btnB3");
             this.btnB3.Name = "btnB3";
             this.btnB3.UseVisualStyleBackColor = true;
+            this.btnB3.Click += new System.EventHandler(this.btnB3_Click);
             // 
             // btnC1
             // 
             resources.ApplyResources(this.btnC1, "btnC1");
             this.btnC1.Name = "btnC1";
             this.btnC1.UseVisualStyleBackColor = true;
+            this.btnC1.Click += new System.EventHandler(this.btnC1_Click);
             // 
             // btnC2
             // 
@@ -138,7 +146,7 @@
             resources.ApplyResources(this.newGameBtn, "newGameBtn");
             this.newGameBtn.Name = "newGameBtn";
             this.newGameBtn.UseVisualStyleBackColor = false;
-            this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click);
+            this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click_1);
             // 
             // helpBtn
             // 
@@ -156,7 +164,7 @@
             resources.ApplyResources(this.ExitBtn, "ExitBtn");
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.UseVisualStyleBackColor = false;
-            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click_1);
             // 
             // TicTacToe
             // 
@@ -191,6 +199,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.playerButtons)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void helpBtn_Click(object sender, EventArgs e)
+        {
         }
 
         #endregion
