@@ -444,17 +444,51 @@
   <data name="&gt;&gt;playerButtons.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="newGameBtn.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="newGameBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQcAAABeCAYAAAAuXdEsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAwlJREFUeF7t2NlSFVcYhuG++kyaqaJJGU0CyiQERAiEQURmlEJJriR3sNJ/R3Bj
+        fZ4H9nPwHMDeNEffW6tXt/3Xu7bz98WV+nnz4rytvz1rK2ev29LpcZs/Pmizh3ttan+3Pd572SZ2X7Tf
+        ysvt9mvvl50t4Aap3dZ+a8e159p17bt2Xnuv3Q9xKFsXb9vGu/P2x/mbtvzmpP1+cvghCK92hgfUA8UA
+        bp/LbQ+h6Pdeu+/qlPBfFM76KJx+iMLebpvsv+R0AOOl9l6779b6KDw/O22Lp0dt7mh/KMYQhfcnhfTH
+        wO3XPXt90haOD9vMwaur+wRRALqnRwdter8Pg9MCMKK7eo3ooyAMwKVOGICkqzCkD4Dx1jkxAEmXfgkg
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkDUPXqxGT8Axps4AFH3cHujVSBEAhjVPdhYaw+3
+        /hQI4Jru/urzJhDAx7pvF+fbvdXl9tP6avt5c71dvmakLwPjo/ty+kn7ZmGu/bC81H5cW3GKAAbd548n
+        Wrk7N9O+W1xo91aeDaeIByOnCJGA8XG5+as4lC+mJtvdpzPt+6U+Eu9fNYZIjJwkhAJun9F9195r99fi
+        cC0S/Umi7iPqdaMuLYdQ9K8co/cSo9I/BP5/Pt5u7bl2Xfuundfea/cxDqPqTqJCUfcSdaKoP6pXj3pA
+        3VHUw4Cbp/ZbO649165r37Xz2nvtvvtscuKfFIVPqVPFVzNP2p3ZqXZnbnp4UL2KfD0/C9wAtdfabe23
+        dlx7rl1f3/pE+xfQJ6GdZkNg+gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="newGameBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="newGameBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="newGameBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="newGameBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="newGameBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 609</value>
+    <value>280, 609</value>
   </data>
   <data name="newGameBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 44</value>
+    <value>181, 44</value>
   </data>
   <data name="newGameBtn.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
+  </data>
+  <data name="newGameBtn.Text" xml:space="preserve">
+    <value>NEW GAME</value>
   </data>
   <data name="&gt;&gt;newGameBtn.Name" xml:space="preserve">
     <value>newGameBtn</value>
@@ -468,41 +502,45 @@
   <data name="&gt;&gt;newGameBtn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="helpBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="ExitBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQcAAABeCAYAAAAuXdEsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAwlJREFUeF7t2NlSFVcYhuG++kyaqaJJGU0CyiQERAiEQURmlEJJriR3sNJ/R3Bj
+        fZ4H9nPwHMDeNEffW6tXt/3Xu7bz98WV+nnz4rytvz1rK2ev29LpcZs/Pmizh3ttan+3Pd572SZ2X7Tf
+        ysvt9mvvl50t4Aap3dZ+a8e159p17bt2Xnuv3Q9xKFsXb9vGu/P2x/mbtvzmpP1+cvghCK92hgfUA8UA
+        bp/LbQ+h6Pdeu+/qlPBfFM76KJx+iMLebpvsv+R0AOOl9l6779b6KDw/O22Lp0dt7mh/KMYQhfcnhfTH
+        wO3XPXt90haOD9vMwaur+wRRALqnRwdter8Pg9MCMKK7eo3ooyAMwKVOGICkqzCkD4Dx1jkxAEmXfgkg
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkDUPXqxGT8Axps4AFH3cHujVSBEAhjVPdhYaw+3
+        /hQI4Jru/urzJhDAx7pvF+fbvdXl9tP6avt5c71dvmakLwPjo/ty+kn7ZmGu/bC81H5cW3GKAAbd548n
+        Wrk7N9O+W1xo91aeDaeIByOnCJGA8XG5+as4lC+mJtvdpzPt+6U+Eu9fNYZIjJwkhAJun9F9195r99fi
+        cC0S/Umi7iPqdaMuLYdQ9K8co/cSo9I/BP5/Pt5u7bl2Xfuundfea/cxDqPqTqJCUfcSdaKoP6pXj3pA
+        3VHUw4Cbp/ZbO649165r37Xz2nvtvvtscuKfFIVPqVPFVzNP2p3ZqXZnbnp4UL2KfD0/C9wAtdfabe23
+        dlx7rl1f3/pE+xfQJ6GdZkNg+gAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="helpBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 609</value>
+  <data name="ExitBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="helpBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 44</value>
-  </data>
-  <data name="helpBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;helpBtn.Name" xml:space="preserve">
-    <value>helpBtn</value>
-  </data>
-  <data name="&gt;&gt;helpBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;helpBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;helpBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="ExitBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="ExitBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="ExitBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>524, 609</value>
+    <value>518, 605</value>
   </data>
   <data name="ExitBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 44</value>
+    <value>140, 53</value>
   </data>
   <data name="ExitBtn.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="ExitBtn.Text" xml:space="preserve">
+    <value>EXIT</value>
   </data>
   <data name="&gt;&gt;ExitBtn.Name" xml:space="preserve">
     <value>ExitBtn</value>
@@ -514,6 +552,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ExitBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="helpBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQcAAABeCAYAAAAuXdEsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAwlJREFUeF7t2NlSFVcYhuG++kyaqaJJGU0CyiQERAiEQURmlEJJriR3sNJ/R3Bj
+        fZ4H9nPwHMDeNEffW6tXt/3Xu7bz98WV+nnz4rytvz1rK2ev29LpcZs/Pmizh3ttan+3Pd572SZ2X7Tf
+        ysvt9mvvl50t4Aap3dZ+a8e159p17bt2Xnuv3Q9xKFsXb9vGu/P2x/mbtvzmpP1+cvghCK92hgfUA8UA
+        bp/LbQ+h6Pdeu+/qlPBfFM76KJx+iMLebpvsv+R0AOOl9l6779b6KDw/O22Lp0dt7mh/KMYQhfcnhfTH
+        wO3XPXt90haOD9vMwaur+wRRALqnRwdter8Pg9MCMKK7eo3ooyAMwKVOGICkqzCkD4Dx1jkxAEmXfgkg
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAk
+        DkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkAkDkDUPXqxGT8Axps4AFH3cHujVSBEAhjVPdhYaw+3
+        /hQI4Jru/urzJhDAx7pvF+fbvdXl9tP6avt5c71dvmakLwPjo/ty+kn7ZmGu/bC81H5cW3GKAAbd548n
+        Wrk7N9O+W1xo91aeDaeIByOnCJGA8XG5+as4lC+mJtvdpzPt+6U+Eu9fNYZIjJwkhAJun9F9195r99fi
+        cC0S/Umi7iPqdaMuLYdQ9K8co/cSo9I/BP5/Pt5u7bl2Xfuundfea/cxDqPqTqJCUfcSdaKoP6pXj3pA
+        3VHUw4Cbp/ZbO649165r37Xz2nvtvvtscuKfFIVPqVPFVzNP2p3ZqXZnbnp4UL2KfD0/C9wAtdfabe23
+        dlx7rl1f3/pE+xfQJ6GdZkNg+gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="helpBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="helpBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="helpBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 606</value>
+  </data>
+  <data name="helpBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 51</value>
+  </data>
+  <data name="helpBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="helpBtn.Text" xml:space="preserve">
+    <value>HELP</value>
+  </data>
+  <data name="&gt;&gt;helpBtn.Name" xml:space="preserve">
+    <value>helpBtn</value>
+  </data>
+  <data name="&gt;&gt;helpBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;helpBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;helpBtn.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

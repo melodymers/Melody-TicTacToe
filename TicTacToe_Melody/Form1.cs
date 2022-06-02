@@ -18,7 +18,6 @@ namespace TicTacToe_Melody
         {
             InitializeComponent();
         }
-
         private void TicTacToe_Load(object sender, EventArgs e)
         {
 
@@ -456,7 +455,7 @@ namespace TicTacToe_Melody
                     winner = "PLAYER X, ";
 
                 MessageBox.Show(winner + "YOU WIN!");
-                btnB1.Enabled = false;
+                btnB3.Enabled = false;
                 newGameBtn.Enabled = true;
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
@@ -484,7 +483,7 @@ namespace TicTacToe_Melody
         }
         private void btnC1_Click(object sender, EventArgs e)
         {
-            Button btnB3 = (Button)sender;
+            Button btnC1 = (Button)sender;
 
             if (turn)
                 btnC1.Text = "X";
@@ -497,6 +496,82 @@ namespace TicTacToe_Melody
             checkingwinner();
         }
         private void checkingwinner()
+        {
+            bool you_win = false;
+            //horizontal
+            if ((btnA1.Text == btnA2.Text) && (btnA2.Text == btnA3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnB1.Text == btnB2.Text) && (btnB2.Text == btnB3.Text) && (!btnB1.Enabled))
+                you_win = true;
+            else if ((btnC1.Text == btnC2.Text) && (btnC2.Text == btnC3.Text) && (!btnC1.Enabled))
+                you_win = true;
+
+            //vertical
+            if ((btnA1.Text == btnB3.Text) && (btnB3.Text == btnC3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA2.Text == btnB2.Text) && (btnB2.Text == btnC2.Text) && (!btnA2.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB1.Text) && (btnB1.Text == btnC1.Text) && (!btnA3.Enabled))
+                you_win = true;
+
+            //diagonal
+            if ((btnA1.Text == btnB2.Text) && (btnB2.Text == btnC1.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB2.Text) && (btnB2.Text == btnC3.Text) && (!btnC3.Enabled))
+                you_win = true;
+
+            if (you_win)
+            {
+
+                string winner = "YOU WIN";
+                if (turn)
+                    winner = "PLAYER O, ";
+                else
+                    winner = "PLAYER X, ";
+
+                MessageBox.Show(winner + "YOU WIN!");
+                btnC1.Enabled = false;
+                newGameBtn.Enabled = true;
+                helpBtn.Enabled = true;
+                ExitBtn.Enabled = true;
+            }
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw!");
+                newGameBtn.Enabled = true;
+                helpBtn.Enabled = true;
+                ExitBtn.Enabled = true;
+            }
+        }
+        private void ButtonsC1()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnC1 = (Button)x;
+                    btnC1.Enabled = false;
+                }
+            }
+            catch { }
+  
+        }  
+        private void btnC2_Click(object sender, EventArgs e)
+        {
+            Button btnC2 = (Button)sender;
+
+            if (turn)
+                btnC2.Text = "X";
+            else
+                btnC2.Text = "O";
+
+            turn = !turn;
+            btnC2.Enabled = false;
+            turn_count++;
+            WinnerChecking();
+        }
+        private void WinnerChecking()
         {
             bool you_win = false;
             //horizontal
@@ -545,37 +620,116 @@ namespace TicTacToe_Melody
                 ExitBtn.Enabled = true;
             }
         }
-        private void ButtonsC1()
+        private void ButtonsC2()
         {
             try
             {
                 foreach (Control x in Controls)
                 {
-                    Button btnC1 = (Button)x;
-                    btnC1.Enabled = false;
+                    Button btnC2 = (Button)x;
+                    btnC2.Enabled = false;
                 }
             }
             catch { }
         }
-        private void HelpBtn_Click(object sender, EventArgs e)
+
+        private void btnC3_Click(object sender, EventArgs e)
+        {
+            Button btnC3 = (Button)sender;
+
+            if (turn)
+                btnC3.Text = "X";
+            else
+                btnC3.Text = "O";
+
+            turn = !turn;
+            btnC3.Enabled = false;
+            turn_count++;
+            WinnerCheckings();
+        }
+        private void WinnerCheckings()
+        {
+            bool you_win = false;
+            //horizontal
+            if ((btnA1.Text == btnA2.Text) && (btnA2.Text == btnA3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnB1.Text == btnB2.Text) && (btnB2.Text == btnB3.Text) && (!btnB1.Enabled))
+                you_win = true;
+            else if ((btnC1.Text == btnC2.Text) && (btnC2.Text == btnC3.Text) && (!btnC1.Enabled))
+                you_win = true;
+
+            //vertical
+            if ((btnA1.Text == btnB3.Text) && (btnB3.Text == btnC3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA2.Text == btnB2.Text) && (btnB2.Text == btnC2.Text) && (!btnA2.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB1.Text) && (btnB1.Text == btnC1.Text) && (!btnA3.Enabled))
+                you_win = true;
+
+            //diagonal
+            if ((btnA1.Text == btnB2.Text) && (btnB2.Text == btnC1.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB2.Text) && (btnB2.Text == btnC3.Text) && (!btnC3.Enabled))
+                you_win = true;
+
+            if (you_win)
+            {
+
+                string winner = "YOU WIN";
+                if (turn)
+                    winner = "PLAYER O, ";
+                else
+                    winner = "PLAYER X, ";
+
+                MessageBox.Show(winner + "YOU WIN!");
+                btnB1.Enabled = false;
+                newGameBtn.Enabled = true;
+                helpBtn.Enabled = true;
+                ExitBtn.Enabled = true;
+            }
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw!");
+                newGameBtn.Enabled = true;
+                helpBtn.Enabled = true;
+                ExitBtn.Enabled = true;
+            }
+        }
+        private void ButtonsC3()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnC3 = (Button)x;
+                    btnC3.Enabled = false;
+                }
+            }
+            catch { }
+        }
+
+        private void newGameBtn_Click(object sender, EventArgs e)
+        {
+            newGameBtn.Visible = true;
+            Application.Restart();
+            Environment.Exit(0);
+
+        }
+
+        private void helpBtn_Click_1(object sender, EventArgs e)
         {
             helpBtn.Visible = false;
             MessageBox.Show("-Decide on who will tick a box first .\n" + "-Players will take turn ticking X and O to their chosen boxes.\n" +
-                "-The first player who completes a 3 in a row, column, diagonal pattern will be the game's winner. ");
-        }
-        private void ExitBtn_Click_1(object sender, EventArgs e)
-        {
-            {
-                ExitBtn.Visible = false;
-                Environment.Exit(0);
-            }
+                       "-The first player who completes a 3 in a row, column, diagonal pattern will be the game's winner. ");
+
         }
 
-        private void newGameBtn_Click_1(object sender, EventArgs e)
+        private void ExitBtn_Click_1(object sender, EventArgs e)
         {
-            newGameBtn.Visible = false;
-            Application.Restart();
+            ExitBtn.Visible = false;
             Environment.Exit(0);
+
         }
     }
 }

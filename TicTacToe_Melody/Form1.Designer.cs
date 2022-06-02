@@ -46,8 +46,8 @@ namespace TicTacToe_Melody
             this.btnC3 = new System.Windows.Forms.Button();
             this.playerButtons = new System.Windows.Forms.PictureBox();
             this.newGameBtn = new System.Windows.Forms.Button();
-            this.helpBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
+            this.helpBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.titleHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerButtons)).BeginInit();
@@ -123,12 +123,14 @@ namespace TicTacToe_Melody
             resources.ApplyResources(this.btnC2, "btnC2");
             this.btnC2.Name = "btnC2";
             this.btnC2.UseVisualStyleBackColor = true;
+            this.btnC2.Click += new System.EventHandler(this.btnC2_Click);
             // 
             // btnC3
             // 
             resources.ApplyResources(this.btnC3, "btnC3");
             this.btnC3.Name = "btnC3";
             this.btnC3.UseVisualStyleBackColor = true;
+            this.btnC3.Click += new System.EventHandler(this.btnC3_Click);
             // 
             // playerButtons
             // 
@@ -141,30 +143,33 @@ namespace TicTacToe_Melody
             // 
             // newGameBtn
             // 
+            resources.ApplyResources(this.newGameBtn, "newGameBtn");
             this.newGameBtn.BackColor = System.Drawing.Color.Transparent;
             this.newGameBtn.ForeColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.newGameBtn, "newGameBtn");
+            this.newGameBtn.Image = global::TicTacToe_Melody.Properties.Resources.green1;
             this.newGameBtn.Name = "newGameBtn";
             this.newGameBtn.UseVisualStyleBackColor = false;
-            this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click_1);
-            // 
-            // helpBtn
-            // 
-            this.helpBtn.BackColor = System.Drawing.Color.Transparent;
-            this.helpBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.helpBtn, "helpBtn");
-            this.helpBtn.Name = "helpBtn";
-            this.helpBtn.UseVisualStyleBackColor = false;
-            this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click);
+            this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click);
             // 
             // ExitBtn
             // 
             this.ExitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ExitBtn.ForeColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.ExitBtn, "ExitBtn");
+            this.ExitBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.ExitBtn.Image = global::TicTacToe_Melody.Properties.Resources.green1;
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click_1);
+            // 
+            // helpBtn
+            // 
+            this.helpBtn.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.helpBtn, "helpBtn");
+            this.helpBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.helpBtn.Image = global::TicTacToe_Melody.Properties.Resources.green1;
+            this.helpBtn.Name = "helpBtn";
+            this.helpBtn.UseVisualStyleBackColor = false;
+            this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click_1);
             // 
             // TicTacToe
             // 
@@ -173,8 +178,8 @@ namespace TicTacToe_Melody
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::TicTacToe_Melody.Properties.Resources.bgg;
-            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.helpBtn);
+            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.newGameBtn);
             this.Controls.Add(this.playerButtons);
             this.Controls.Add(this.titleHeader);
@@ -225,8 +230,8 @@ namespace TicTacToe_Melody
         private System.Windows.Forms.Button btnC3;
         private System.Windows.Forms.PictureBox playerButtons;
         private System.Windows.Forms.Button newGameBtn;
-        private System.Windows.Forms.Button helpBtn;
         private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button helpBtn;
     }
 }
 
