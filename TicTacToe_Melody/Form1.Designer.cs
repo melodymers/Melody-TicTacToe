@@ -74,7 +74,7 @@ namespace TicTacToe_Melody
             resources.ApplyResources(this.btnA1, "btnA1");
             this.btnA1.Name = "btnA1";
             this.btnA1.UseVisualStyleBackColor = true;
-            this.btnA1.Click += new System.EventHandler(this.btnA1_Click);
+            this.btnA1.Click += new System.EventHandler(this.btnA1_Click_1);
             // 
             // btnA2
             // 
@@ -102,14 +102,14 @@ namespace TicTacToe_Melody
             resources.ApplyResources(this.btnB2, "btnB2");
             this.btnB2.Name = "btnB2";
             this.btnB2.UseVisualStyleBackColor = true;
-            this.btnB2.Click += new System.EventHandler(this.btnB2_Click);
+            this.btnB2.Click += new System.EventHandler(this.btnB2_Click_1);
             // 
             // btnB3
             // 
             resources.ApplyResources(this.btnB3, "btnB3");
             this.btnB3.Name = "btnB3";
             this.btnB3.UseVisualStyleBackColor = true;
-            this.btnB3.Click += new System.EventHandler(this.btnB3_Click);
+            this.btnB3.Click += new System.EventHandler(this.btnB3_Click_1);
             // 
             // btnC1
             // 

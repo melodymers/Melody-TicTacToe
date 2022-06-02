@@ -22,7 +22,7 @@ namespace TicTacToe_Melody
         {
 
         }
-        private void btnA1_Click(object sender, EventArgs e)
+        private void btnA1_Click_1(object sender, EventArgs e)
         {
             Button btnA1 = (Button)sender;
 
@@ -65,6 +65,7 @@ namespace TicTacToe_Melody
 
             if (you_win)
             {
+                DisableButtons();
 
                 string winner = "";
                 if (turn)
@@ -73,7 +74,6 @@ namespace TicTacToe_Melody
                     winner = "PLAYER X, ";
 
                 MessageBox.Show(winner + "YOU WIN!");
-                btnA1.Enabled = false;
                 newGameBtn.Enabled = true;
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
@@ -82,7 +82,6 @@ namespace TicTacToe_Melody
             {
                 if (turn_count == 9)
                     MessageBox.Show("Draw!");
-                btnA1.Enabled = false;
                 newGameBtn.Enabled = true;
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
@@ -100,8 +99,7 @@ namespace TicTacToe_Melody
             }
             catch { }
         }
-
-        private void BtnA1_Click(object sender, EventArgs e)
+        private void btnAA1_Click(object sender, EventArgs e)
         {
             turn = true;
             turn_count = 0;
@@ -157,6 +155,7 @@ namespace TicTacToe_Melody
 
             if (you_win)
             {
+                DisableButtons();
 
                 string winner = "YOU WIN";
                 if (turn)
@@ -165,7 +164,6 @@ namespace TicTacToe_Melody
                     winner = "PLAYER X, ";
 
                 MessageBox.Show(winner + "YOU WIN!");
-                btnA2.Enabled = false;
                 newGameBtn.Enabled = true;
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
@@ -179,7 +177,38 @@ namespace TicTacToe_Melody
                 ExitBtn.Enabled = true;
             }
         }
+        private void Disable_Buttons()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA2 = (Button)x;
+                    btnA2.Enabled = false;
+                }
+            }
+            catch { }
+        }
 
+        private void btnAA2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnAB2_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button btnA2 = (Button)c;
+                    btnA2.Enabled = true;
+                    btnA2.Text = "";
+                }
+            }
+            catch { }
+        }
         private void btnA3_Click_1(object sender, EventArgs e)
         {
             Button btnA3 = (Button)sender;
@@ -243,17 +272,64 @@ namespace TicTacToe_Melody
                 ExitBtn.Enabled = true;
             }
         }
-        private void Buttons()
+        private void disableButtons()
         {
             try
             {
                 foreach (Control x in Controls)
                 {
-                    Button btnA3 = (Button)x;
-                    btnA3.Enabled = false;
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
                 }
             }
             catch { }
+        }
+        private void btnA3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnAA3_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button btnA1 = (Button)c;
+                    btnA1.Enabled = true;
+                    btnA1.Text = "";
+                }
+            }
+            catch { }
+        }
+        private void btnAB3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnAC3_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button btnA3 = (Button)c;
+                    btnA3.Enabled = true;
+                    btnA3.Text = "";
+                }
+            }
+            catch { }
+        }
+        private void btnAD3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnAF3_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
         }
         private void btnB1_Click_1(object sender, EventArgs e)
         {
@@ -296,7 +372,7 @@ namespace TicTacToe_Melody
 
             if (you_win)
             {
-
+                disableButtons();
 
                 string winner = "YOU WIN";
                 if (turn)
@@ -318,8 +394,9 @@ namespace TicTacToe_Melody
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
             }
+
         }
-        private void ButtonsB1()
+        private void disableBTN()
         {
             try
             {
@@ -331,7 +408,28 @@ namespace TicTacToe_Melody
             }
             catch { }
         }
-        private void btnB2_Click(object sender, EventArgs e)
+        private void disableBTNS()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
+                }
+            }
+            catch { }
+        }
+        private void btnB1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnBB1_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+        }
+        private void btnBB2_Click(object sender, EventArgs e)
         {
             Button btnB2 = (Button)sender;
 
@@ -394,6 +492,83 @@ namespace TicTacToe_Melody
                 ExitBtn.Enabled = true;
             }
         }
+        private void DisableBTNS()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
+                }
+            }
+            catch { }
+        }
+        private void btnB2_Click_1(object sender, EventArgs e)
+        {
+            Button btnB1 = (Button)sender;
+
+            if (turn)
+                btnB1.Text = "X";
+            else
+                btnB1.Text = "O";
+
+            turn = !turn;
+            btnB1.Enabled = false;
+            turn_count++;
+            WinnerChecked();
+        }
+        private void WinnerChecking()
+        {
+            bool you_win = false;
+
+            //horizontal
+            if ((btnA1.Text == btnA2.Text) && (btnA2.Text == btnA3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnB1.Text == btnB2.Text) && (btnB2.Text == btnB3.Text) && (!btnB1.Enabled))
+                you_win = true;
+            else if ((btnC1.Text == btnC2.Text) && (btnC2.Text == btnC3.Text) && (!btnC1.Enabled))
+                you_win = true;
+
+            //vertical
+            if ((btnA1.Text == btnB3.Text) && (btnB3.Text == btnC3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA2.Text == btnB2.Text) && (btnB2.Text == btnC2.Text) && (!btnA2.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB1.Text) && (btnB1.Text == btnC1.Text) && (!btnA3.Enabled))
+                you_win = true;
+
+            //diagonal
+            if ((btnA1.Text == btnB2.Text) && (btnB2.Text == btnC1.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB2.Text) && (btnB2.Text == btnC3.Text) && (!btnC3.Enabled))
+                you_win = true;
+
+            if (you_win)
+            {
+
+                string winner = "YOU WIN";
+                if (turn)
+                    winner = "PLAYER O, ";
+                else
+                    winner = "PLAYER X, ";
+
+                MessageBox.Show(winner + "YOU WIN!");
+                btnB1.Enabled = false;
+                newGameBtn.Enabled = true;
+                helpBtn.Enabled = true;
+                ExitBtn.Enabled = true;
+            }
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw!");
+                newGameBtn.Enabled = true;
+                helpBtn.Enabled = true;
+                ExitBtn.Enabled = true;
+            }
+
+    }
         private void ButtonsB2()
         {
             try
@@ -406,7 +581,7 @@ namespace TicTacToe_Melody
             }
             catch { }
         }
-        private void btnB3_Click(object sender, EventArgs e)
+        private void btnBB3_Click(object sender, EventArgs e)
         {
             Button btnB3 = (Button)sender;
 
@@ -468,6 +643,58 @@ namespace TicTacToe_Melody
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
             }
+        }
+        private void DisableBTTNS()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
+                }
+            }
+            catch { }
+        }
+        private void btnB3_Click_1(object sender, EventArgs e)
+        {
+            if (turn)
+                btnB3.Text = "X";
+            else
+                btnB3.Text = "O";
+
+            turn = !turn;
+            btnB3.Enabled = false;
+            turn_count++;
+            WinnerCheckk();
+        }
+        private void WinnerCheckk()
+        {
+            bool you_win = false;
+
+            //horizontal
+            if ((btnA1.Text == btnA2.Text) && (btnA2.Text == btnA3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnB1.Text == btnB2.Text) && (btnB2.Text == btnB3.Text) && (!btnB1.Enabled))
+                you_win = true;
+            else if ((btnC1.Text == btnC2.Text) && (btnC2.Text == btnC3.Text) && (!btnC1.Enabled))
+                you_win = true;
+
+            //vertical
+            if ((btnA1.Text == btnB3.Text) && (btnB3.Text == btnC3.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA2.Text == btnB2.Text) && (btnB2.Text == btnC2.Text) && (!btnA2.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB1.Text) && (btnB1.Text == btnC1.Text) && (!btnA3.Enabled))
+                you_win = true;
+
+            //diagonal
+            if ((btnA1.Text == btnB2.Text) && (btnB2.Text == btnC1.Text) && (!btnA1.Enabled))
+                you_win = true;
+            else if ((btnA3.Text == btnB2.Text) && (btnB2.Text == btnC3.Text) && (!btnC3.Enabled))
+                you_win = true;
+            turn = true;
+            turn_count = 0;
         }
         private void ButtonsB3()
         {
@@ -544,6 +771,27 @@ namespace TicTacToe_Melody
                 ExitBtn.Enabled = true;
             }
         }
+        private void disableBTTN()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
+                }
+            }
+            catch { }
+        }
+        private void btnC11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnCC1_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+        }
         private void ButtonsC1()
         {
             try
@@ -569,9 +817,9 @@ namespace TicTacToe_Melody
             turn = !turn;
             btnC2.Enabled = false;
             turn_count++;
-            WinnerChecking();
+            WinnerCheckingraw();
         }
-        private void WinnerChecking()
+        private void WinnerCheckingraw()
         {
             bool you_win = false;
             //horizontal
@@ -619,6 +867,27 @@ namespace TicTacToe_Melody
                 helpBtn.Enabled = true;
                 ExitBtn.Enabled = true;
             }
+        }
+        private void disableBttn()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
+                }
+            }
+            catch { }
+        }
+        private void btnCC2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnCF2_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
         }
         private void ButtonsC2()
         {
@@ -696,6 +965,27 @@ namespace TicTacToe_Melody
                 ExitBtn.Enabled = true;
             }
         }
+        private void disableBttns()
+        {
+            try
+            {
+                foreach (Control x in Controls)
+                {
+                    Button btnA1 = (Button)x;
+                    btnA1.Enabled = false;
+                }
+            }
+            catch { }
+        }
+        private void btnCC3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnCF3_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+        }
         private void ButtonsC3()
         {
             try
@@ -731,7 +1021,10 @@ namespace TicTacToe_Melody
             Environment.Exit(0);
 
         }
+
+        }
     }
-}
+
+
     
     
