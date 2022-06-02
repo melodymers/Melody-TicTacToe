@@ -56,7 +56,6 @@
             this.titleHeader.Image = global::TicTacToe_Melody.Properties.Resources.ff;
             this.titleHeader.Name = "titleHeader";
             this.titleHeader.TabStop = false;
-            this.titleHeader.Click += new System.EventHandler(this.title_Click);
             // 
             // background
             // 
@@ -85,49 +84,43 @@
             resources.ApplyResources(this.btnA3, "btnA3");
             this.btnA3.Name = "btnA3";
             this.btnA3.UseVisualStyleBackColor = true;
-            this.btnA3.Click += new System.EventHandler(this.btnA3_Click);
+            this.btnA3.Click += new System.EventHandler(this.btnA3_Click_1);
             // 
             // btnB1
             // 
             resources.ApplyResources(this.btnB1, "btnB1");
             this.btnB1.Name = "btnB1";
             this.btnB1.UseVisualStyleBackColor = true;
-            this.btnB1.Click += new System.EventHandler(this.btnB1_Click);
             // 
             // btnB2
             // 
             resources.ApplyResources(this.btnB2, "btnB2");
             this.btnB2.Name = "btnB2";
             this.btnB2.UseVisualStyleBackColor = true;
-            this.btnB2.Click += new System.EventHandler(this.btnB2_Click);
             // 
             // btnB3
             // 
             resources.ApplyResources(this.btnB3, "btnB3");
             this.btnB3.Name = "btnB3";
             this.btnB3.UseVisualStyleBackColor = true;
-            this.btnB3.Click += new System.EventHandler(this.btnB3_Click);
             // 
             // btnC1
             // 
             resources.ApplyResources(this.btnC1, "btnC1");
             this.btnC1.Name = "btnC1";
             this.btnC1.UseVisualStyleBackColor = true;
-            this.btnC1.Click += new System.EventHandler(this.btnC1_Click);
             // 
             // btnC2
             // 
             resources.ApplyResources(this.btnC2, "btnC2");
             this.btnC2.Name = "btnC2";
             this.btnC2.UseVisualStyleBackColor = true;
-            this.btnC2.Click += new System.EventHandler(this.btnC2_Click);
             // 
             // btnC3
             // 
             resources.ApplyResources(this.btnC3, "btnC3");
             this.btnC3.Name = "btnC3";
             this.btnC3.UseVisualStyleBackColor = true;
-            this.btnC3.Click += new System.EventHandler(this.btnC3_Click);
             // 
             // playerButtons
             // 
